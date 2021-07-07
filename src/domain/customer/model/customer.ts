@@ -1,19 +1,19 @@
 import { Name } from "./name";
 
 export class Customer {
-    private id:Number;
-    private name:Name;
+    private id: Number;
+    private name: Name;
 
-    public constructor(id:number, name:Name) {
-        this.id=id;
-        this.name=name;
+    public constructor(id: Number, name: Name) {
+        this.id = id;
+        this.name = name;
     }
 
-    public getId():Number {
+    public getId(): Number {
         return this.id;
     }
 
-    public getName():String {
+    public getName(): string {
         return this.name.getName();
     }
 }
