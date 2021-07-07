@@ -11,15 +11,20 @@ export class GetCustomersService implements GetCustomer {
     public constructor(repository: CustomerRepository) {
         this.repository = repository;
     }
-    byId(id: Number): Customer | undefined {
+    byId(id: Number): Promise<Customer | undefined> {
         try {
             let customer: CustomerDTO = this.repository.get(id);
             if (customer) {
-                return CustomerDTOToCustomerMapper.map(customer);
+                return new Promise((resolve, reject) => {
+                    resolve(CustomerDTOToCustomerMapper.map(customer));
+                });
+
             }
         } catch (error) {
             throw new Error('The customer could not be fetched')
         }
-        return undefined;
+        return new Promise((resolve, reject) => {
+            resolve(undefined);
+        });
     }
 }

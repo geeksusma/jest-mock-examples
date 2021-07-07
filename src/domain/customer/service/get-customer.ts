@@ -1,5 +1,5 @@
 import { Customer } from "../model/customer";
 
 export interface GetCustomer {
-    byId(id: Number): Customer | undefined;
+    byId(id: Number): Promise<Customer | undefined>;
 }
