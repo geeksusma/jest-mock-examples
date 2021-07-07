@@ -1,0 +1,32 @@
+{
+  "name": "jest-mock-examples",
+  "version": "1.0.0",
+  "description": "Typescript project to check how to mock dependencies using Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "lint": "eslint ./src --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geeksusma-cdr/jest-mock-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geeksusma-cdr/jest-mock-examples/issues"
+  },
+  "homepage": "https://github.com/geeksusma-cdr/jest-mock-examples#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "ts-mockito": "^2.6.1",
+    "typescript": "^4.3.5"
+  }
+}
